@@ -8,6 +8,7 @@ import React, { useState } from 'react';
 import {
   SafeAreaView
 } from 'react-native';
+import { View, Button, Alert } from 'react-native';
 
 import ToDoList from './ToDoList';
 import ToDoForm from './ToDoForm';
@@ -23,10 +24,17 @@ function App() {
     'Walk dog'
   ]);
 
+  const addTask = (task) => {
+    // Implement the logic to add a new task
+    setTasks([...tasks, task]);
+  };
+
   return (
     <SafeAreaView>
+    
       <ToDoList tasks={tasks}/>
-      <ToDoForm/>
+      <ToDoForm addTask={addTask} tasks={tasks} />  {/* Passing addTask function as a prop to ToDoForm */}
+
       
     </SafeAreaView>
   );
