@@ -5,8 +5,7 @@ import {
   Text,
   TextInput,
   Button,
-  StyleSheet,
-  Alert
+  StyleSheet
 } from 'react-native';
 
 

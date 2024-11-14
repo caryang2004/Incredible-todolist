@@ -8,7 +8,6 @@ import React, { useState } from 'react';
 import {
   SafeAreaView
 } from 'react-native';
-import { View, Button, Alert } from 'react-native';
 
 import ToDoList from './ToDoList';
 import ToDoForm from './ToDoForm';
